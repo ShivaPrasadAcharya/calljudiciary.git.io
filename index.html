@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Contacts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 0;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: blue;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: green;
+    }
+
+    #developedby {
+      font-style: italic;
+      color: brown;
+      text-align: right;
+    }
+
+    #search::placeholder {
+      color: #999;
+    }
+
+  .fixedtop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  #contacts {
+    margin-top: 60px;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #search {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: yellow;
+  }
+</style> 
+</head>
+
+<body>
+   <div class="fixedtop">
+    <center><b><u> Human Resource of Judiciary</u></b> </center>
+    <p id="developedby"><u><b>Developed By:</b></u>Shiva Prasad Acharya
+</p>
+    <input type="text" id="search" onkeyup="searchFunction()" placeholder="Search...नमो नमः">
+   </div><br><br><br><br><br>
+ <div id="contacts">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Contact No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <table>
+        <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .btn {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Name (Post)</th>
+        <th>No.</th>
+    </tr>
+   
+    <tr>
+      <td>3.Shri Bhadrakali Pokharel<br>श्री भद्रकाली पोखरेल<br>pokharel03@gmail.com</td>
+      <td><a href="tel:+9779841808499">9841808499<br><button class="btn" onclick="call('+9779841808499')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>4.Shri Man Bahadur Karki<br>श्री मानबहादुर कार्की<br>karkimb@gmail.com</td>
+      <td><a href="tel:+9779841354234">9841354234<br><button class="btn" onclick="call('+9779841354234')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>5.Shri Khadraj Adhikari<br>श्री खड्गराज अधिकारी<br>khadgarajadhikari@gmail.com</td>
+      <td><a href="tel:+9779851100041">9851100041<br><button class="btn" onclick="call('+9779851100041')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>6.Shri Jitendrababu Thapaliya<br>श्री जितेन्द्रबाबु थपलिया<br>thapaliyajb@gmail.com</td>
+      <td><a href="tel:+9779852037370">9852037370<br><button class="btn" onclick="call('+9779852037370')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>7.Shri Achyut Kunikel<br>श्री अच्युत कुँइकेल<br>achyutllm@gmail.com/ ak3653@gmail.com</td>
+      <td><a href="tel:+9779841365338">9841365338<br><button class="btn" onclick="call('+9779841365338')">Call</button></a>, <a href="tel:+9779857029464">9857029464<br><button class="btn" onclick="call('+9779857029464')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>8.Shri Gajendra Bahadur Singh<br>श्री गजेन्द्रबहादुर सिंह<br>singh.gajeendrabdr@gmail.com</td>
+      <td><a href="tel:+9779751094777">9751094777<br><button class="btn" onclick="call('+9779751094777')">Call</button></a>, <a href="tel:+9779841410351">9841410351<br><button class="btn" onclick="call('+9779841410351')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>9.Shri Thagindra Kattel<br>श्री ठगिन्द्र कट्टेल<br>thagindra@gmail.com</td>
+      <td><a href="tel:+9779841645340">9841645340<br><button class="btn" onclick="call('+9779841645340')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>10.Shri Ramprasad Bhattarai<br>श्री रामप्रसाद भट्टराई<br>ram.bhattarai2029@gmail.com</td>
+      <td><a href="tel:+9779858487227">9858487227<br><button class="btn" onclick="call('+9779858487227')">Call</button></a>/<a href="tel:+9779849792787">9849792787<br><button class="btn" onclick="call('+9779849792787')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>11.Shri Baburam Dahal<br>श्री बाबुराम दाहाल<br>dhl_baburam@yahoo.com</td>
+      <td><a href="tel:+9779851084410">9851084410<br><button class="btn" onclick="call('+9779851084410')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>12.Shri Shri Lal Paudel<br>श्री श्रीलाल पौडेल<br>shreelalpoudel@yahoo.com</td>
+      <td><a href="tel:+9779841364003">9841364003<br><button class="btn" onclick="call('+9779841364003')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>13.Shri Veda Prasad Upreti<br>श्री वेदप्रसाद उप्रेती<br>bpuprety2071@gmail.com</td>
+      <td><a href="tel:+9779851248912">9851248912<br><button class="btn" onclick="call('+9779851248912')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>14.Shri Ran Bahadur Katuwal<br>श्री रणबहादुर कटुवाल<br>ranakatuwal18@gmail.com</td>
+      <td><a href="tel:+9779863714985">9863714985<br><button class="btn" onclick="call('+9779863714985')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>15.Shri Ashok Kumar Chhetri<br>श्री अशोककुमार क्षेत्री<br>akresham@gmail.com</td>
+      <td><a href="tel:+9779841357714">9841357714<br><button class="btn" onclick="call('+9779841357714')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>16.Shri Arjun Prasad Koirala<br>श्री अर्जुनप्रसाद कोइराला<br>arjunkoi@gmail.com</td>
+      <td><a href="tel:+9779842026917">9842026917<br><button class="btn" onclick="call('+9779842026917')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>17.Shri Rampyari Sunuwar<br>श्री रामप्यारी सुनुवार<br>pyari282002@yahoo.com</td>
+      <td><a href="tel:+9774489514">4489514<br><button class="btn" onclick="call('+9774489514')">Call</button></a>/<a href="tel:+9779841310943">9841310943<br><button class="btn" onclick="call('+9779841310943')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>18.Shri Suryavansh Sharma Kandel<br>श्री सूर्यवंश शर्मा कंडेल<br>sbskandel@yahoo.com</td>
+      <td><a href="tel:+9779841362027">9841362027<br><button class="btn" onclick="call('+9779841362027')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>19.Shri Jagdish Prasad Bhatt<br>श्री जगदीशप्रसाद भट्ट<br>jagadishbhatta2077@gmail.com</td>
+      <td><a href="tel:+9779841762754">9841762754<br><button class="btn" onclick="call('+9779841762754')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>20.Shri Vishwajung Sijapati<br>श्री विश्‍वजंग सिजापति<br>bisu.war@gmail.com</td>
+      <td><a href="tel:+9779842627595">9842627595<br><button class="btn" onclick="call('+9779842627595')">Call</button></a></td>
+    </tr>
+    <tr>
+      <td>21.Shri Prem Khadka<br>श्री प्रेम खड्का<br>lawyer.prem@gmail.com</td>
+      <td><a href="tel:+9779840095061">9840095061<br><button class="btn" onclick="call('+9779840095061')">Call</button></a></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <script>
+    function searchFunction() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("contacts");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            td = tr[i].getElementsByTagName("td")[1];
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    }
+//to make content not to pass over fixed top on scrolling//
+
+      window.addEventListener("scroll", function() {
+        var fixedTop = document.querySelector(".fixedtop");
+        var contacts = document.querySelector("#contacts");
+        if (window.pageYOffset >= fixedTop.offsetHeight) {
+          contacts.style.marginTop = fixedTop.offsetHeight + "px";
+        } else {
+          contacts.style.marginTop = "20px";
+        }
+      });
+
+      window.addEventListener("scroll", function() {
+      var fixedTop = document.querySelector(".fixedtop");
+      var contacts = document.querySelector("#contacts");
+      if (window.pageYOffset >= fixedTop.offsetHeight) {
+        contacts.style.marginTop = fixedTop.offsetHeight + "px";
+      } else {
+        contacts.style.marginTop = "60px";
+      }
+    });
+    
+</script>
+</body>
+<footer>
+  <center><b>-भवतु सब्ब मङ्गलम्-</b> </center>
+  <p id="developedby"><u><b>Developed By:</b></u><br> Shiva Prasad Acharya
+     2081, bhudhapurnima <br>स्रोतः supreme court
+  </p>
+</footer>
+</html>
+
