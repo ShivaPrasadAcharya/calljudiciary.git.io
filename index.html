@@ -1299,7 +1299,13 @@
       contacts.style.marginTop = "60px";
     }
   });
-  
+          function sendEmail() {
+            var comment = document.getElementById('comment').value;
+            var subject = encodeURIComponent('New Comment');
+            var body = encodeURIComponent('Comment:\n' + comment);
+            window.location.href = 'mailto:spacharya43@gmail.com?subject=' + subject + '&body=' + body;
+        }
+ 
 </script>
 </body>
 <footer>
