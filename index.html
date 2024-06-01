@@ -115,7 +115,42 @@
     text-align: left;
     background-color: yellow;
   }
- 
+  .comment-box-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+        #comment {
+            width: 100%;
+            box-sizing: border-box;
+            padding-right: 40px; /* Space for the arrow button */
+        }
+        .send-arrow {
+            position:absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+            color: #007BFF;
+        }
+  
+        .link-container {
+      position: fixed;
+      bottom: 90%;
+      left: 0;
+      right: 0;
+      text-align: bottom;
+    }
+
+    /* Style for the links */
+    .link-container a {
+      color: red;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 20px;
+      font-size: normal;
+    }
     </style>
 </head>
 <body>
@@ -123,11 +158,16 @@
         <center><b><u> न्यायापालिकायाराजपत्राङ्कितमानवसंसाधनम्</u></b> </center>
         <p id="developedby"><b>-</b>शिवप्रसादआचार्येण निर्मितानि
     </p>
+            <div class="link-container">
+      <a href="#top">&#x25B2;</a>
+      <a href="#bottom">&#x25BC;</a>
+    </div>
         <input type="text" id="search" onkeyup="searchFunction()" placeholder="अन्वेषिका.....">
        </div><br><br><br><br><br>
      <div id="contacts">
       <table>
         <thead>
+            <a id="top"></a>
           <tr>
             <th>Name</th>
             <th><a href="tel:+977 Contact no."><b>Contact No.</b> <br><button class="btn" onclick="call('+977 Contact no.')">Call</button></a></th>
@@ -1204,8 +1244,15 @@
             
 </tbody>
 </table>
-<p><i>*I convey my special thanks to Anjan Raj Sapkota et.al without whom the task wouldn't be possible.<i></p>
-</div>
+<p><i>** Special thanks to Anjan Raj Sapkota et.al without whom the task wouldn't be possible.<i></p>
+	<a id="bottom"></a>
+	
+    <h3 id="feedback">Feedbacks/ Comments</h3>
+    <div class="comment-box-container">
+        <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Only visible to admin..."></textarea>
+        <span class="send-arrow" onclick="sendEmail()">&#10148;</span>
+    </div>
+    
 <script>
   function searchFunction() {
     var input, filter, table, tr, td, i, txtValue;
